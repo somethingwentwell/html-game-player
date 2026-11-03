@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><title>Orbit</title>
+<style>*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0e1110;color:#f1f5ed;font-family:system-ui,-apple-system,sans-serif;touch-action:none;user-select:none}canvas{display:block;width:100%;height:100%}header{position:fixed;top:max(24px,env(safe-area-inset-top));left:max(24px,env(safe-area-inset-left));pointer-events:none}h1{font-size:13px;letter-spacing:4px;margin:0 0 8px;color:#ccf56e}#score{font-size:48px;font-weight:750;letter-spacing:-2px}#intro{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:40px;pointer-events:none}h2{font-size:clamp(40px,10vw,72px);letter-spacing:-3px;margin:0 0 12px}p{font-size:15px;line-height:1.7;color:#9aa69b;margin:0}.pill{display:inline-block;margin-top:30px;padding:15px 25px;border:1px solid #ccf56e;color:#ccf56e;border-radius:50px;font-weight:600;font-size:14px}footer{position:fixed;bottom:max(25px,env(safe-area-inset-bottom));width:100%;text-align:center;font-size:10px;letter-spacing:2px;color:#6d7b70;pointer-events:none}</style></head>
+<body><canvas id="game"></canvas><header><h1>ORBIT</h1><div id="score">0</div></header><div id="intro"><div><h2>Stay in orbit.</h2><p>Hold to orbit closer. Release to drift out.<br>Dodge the violet satellites.</p><div class="pill">Tap anywhere to play</div><p id="best" style="margin-top:20px;font-size:12px"></p></div></div><footer>AN HTML ARCADE ORIGINAL · OFFLINE READY</footer>
+<script>
+const canvas=document.getElementById('game'),ctx=canvas.getContext('2d'),scoreText=document.getElementById('score'),intro=document.getElementById('intro');
+let w,h,dpr,angle=0,radius=140,held=false,playing=false,score=0,best=0,obstacles=[],spawn=0,previous=0;
+try{best=Number(localStorage.getItem('orbit-best')||0)}catch{}
+document.getElementById('best').textContent=best?'BEST '+best:'';
+function resize(){dpr=Math.min(devicePixelRatio||1,2);w=innerWidth;h=innerHeight;canvas.width=w*dpr;canvas.height=h*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)}addEventListener('resize',resize);resize();
+function start(){playing=true;score=0;obstacles=[];spawn=0;radius=Math.min(w,h)*.32;intro.style.display='none'}
+addEventListener('pointerdown',e=>{e.preventDefault();held=true;if(!playing)start()});addEventListener('pointerup',()=>held=false);addEventListener('pointercancel',()=>held=false);
+addEventListener('keydown',e=>{if(e.code==='Space'){e.preventDefault();held=true;if(!playing)start()}});addEventListener('keyup',()=>held=false);
+document.addEventListener('visibilitychange',()=>{held=false;previous=0});
+function end(){playing=false;best=Math.max(best,Math.floor(score));try{localStorage.setItem('orbit-best',best)}catch{}intro.querySelector('h2').textContent='One more orbit?';intro.querySelector('p').innerHTML='Score '+Math.floor(score)+' · Best '+best+'<br>Hold closer. Release to drift.';intro.querySelector('.pill').textContent='Tap to play again';intro.style.display='flex'}
+function frame(time){const dt=previous?Math.min((time-previous)/1000,.04):0;previous=time;const unit=Math.min(w,h),cx=w/2,cy=h/2,inner=unit*.19,outer=unit*.35;ctx.clearRect(0,0,w,h);
+ for(const r of [inner,outer]){ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.strokeStyle='#263028';ctx.lineWidth=1;ctx.stroke()}
+ ctx.beginPath();ctx.arc(cx,cy,5,0,Math.PI*2);ctx.fillStyle='#556449';ctx.fill();
+ angle+=dt*(playing?1.5:.3);radius+=((held?inner:outer)-radius)*Math.min(1,dt*5);const px=cx+Math.cos(angle)*radius,py=cy+Math.sin(angle)*radius;
+ if(playing){score+=dt*10;spawn-=dt;if(spawn<=0){obstacles.push({a:angle+2.5,r:Math.random()<.5?inner:outer,s:0});spawn=Math.max(.6,1.8-score/600)}for(const o of obstacles){o.a-=dt*.35;o.s+=dt;const x=cx+Math.cos(o.a)*o.r,y=cy+Math.sin(o.a)*o.r;ctx.beginPath();ctx.arc(x,y,10,0,Math.PI*2);ctx.fillStyle='#b5a4f6';ctx.fill();if(Math.hypot(x-px,y-py)<19){end();break}}obstacles=obstacles.filter(o=>o.s<5);scoreText.textContent=Math.floor(score)}
+ ctx.shadowBlur=20;ctx.shadowColor='#ccf56e';ctx.beginPath();ctx.arc(px,py,8,0,Math.PI*2);ctx.fillStyle='#ccf56e';ctx.fill();ctx.shadowBlur=0;requestAnimationFrame(frame)}requestAnimationFrame(frame);
+</script></body></html>

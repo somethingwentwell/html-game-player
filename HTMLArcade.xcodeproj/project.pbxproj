@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		122ABB8B11C143DDD497E6D1 /* GameRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47DFE4320054AD22D10069 /* GameRepositoryTests.swift */; };
+		330060502D73AE1AF1D389D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E889C807DA40907EAA9821AF /* Assets.xcassets */; };
+		3906094C58299C688B8C1BB7 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC95270BFE293A22A59611 /* FindView.swift */; };
+		4F516FDA7A61BC652E5AB7C2 /* WebKitStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E60E0BBE0F8E27D4037A0F /* WebKitStorageTests.swift */; };
+		55AB6B255488F59A5716701E /* HTMLArcadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77C53EB0279BCDC6126561 /* HTMLArcadeApp.swift */; };
+		5F558F6249F0D54BF64ED277 /* BrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01BDDE759AB61F7AC187E9 /* BrowserModel.swift */; };
+		689844C2184F45A86F14C5E7 /* GamePlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1878B00A523D309E9BD7361 /* GamePlayerView.swift */; };
+		6BEC43E59135747B8F687E4B /* ArcadeTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0FB604D55CB49FF5B940EB /* ArcadeTheme.swift */; };
+		80FD5C008BEDCCC94ED3F824 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3DC89FE42481587736C3F /* Game.swift */; };
+		820C3115ADA08D1587A4757D /* LocalGames in Resources */ = {isa = PBXBuildFile; fileRef = 85EA2ACA5A9275A8CBE2B482 /* LocalGames */; };
+		8D9FB014C7CED2BEBB07DDB1 /* GameRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF8E98B65578C4275DC6683 /* GameRepository.swift */; };
+		98B25C5D4FA0D463C0A5BE20 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C11BC23A5D5C9636BB48F0D5 /* PrivacyInfo.xcprivacy */; };
+		9DB1149901201E465F195373 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B85A5D5A9B9F42F6F8A4B56 /* ContentView.swift */; };
+		A1B9CC2583AB573AB0FCECA2 /* GameLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E233FC4433C361CF072001 /* GameLibrary.swift */; };
+		A39A1EF93FF0188C3E7CB6E4 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CEC0EEE493C9C6CD97C8589 /* LibraryView.swift */; };
+		FD89848E0AC17C23C06B1425 /* ArcadeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D38D2FEF03F807BFC058CF /* ArcadeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17E5002EA8C94642B4E511E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8738BBF418D12FBEE5147F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CFBAEDB62147E1DD976EEA;
+			remoteInfo = HTMLArcade;
+		};
+		A6F0276D407EAAB016BAF864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8738BBF418D12FBEE5147F01 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CFBAEDB62147E1DD976EEA;
+			remoteInfo = HTMLArcade;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B85A5D5A9B9F42F6F8A4B56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1E22B871BD6ECD19C7C2CB3A /* HTMLArcade.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = HTMLArcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E233FC4433C361CF072001 /* GameLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLibrary.swift; sourceTree = "<group>"; };
+		4C0FB604D55CB49FF5B940EB /* ArcadeTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeTheme.swift; sourceTree = "<group>"; };
+		5C47DFE4320054AD22D10069 /* GameRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepositoryTests.swift; sourceTree = "<group>"; };
+		5FFCC4EFA9C26D16421F65F7 /* ArcadeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ArcadeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B77C53EB0279BCDC6126561 /* HTMLArcadeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLArcadeApp.swift; sourceTree = "<group>"; };
+		85EA2ACA5A9275A8CBE2B482 /* LocalGames */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LocalGames; path = Arcade/Resources/LocalGames; sourceTree = SOURCE_ROOT; };
+		8C01BDDE759AB61F7AC187E9 /* BrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserModel.swift; sourceTree = "<group>"; };
+		9CEC0EEE493C9C6CD97C8589 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		A1878B00A523D309E9BD7361 /* GamePlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayerView.swift; sourceTree = "<group>"; };
+		A8E60E0BBE0F8E27D4037A0F /* WebKitStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebKitStorageTests.swift; sourceTree = "<group>"; };
+		AAF8E98B65578C4275DC6683 /* GameRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRepository.swift; sourceTree = "<group>"; };
+		C0E3DC89FE42481587736C3F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C11BC23A5D5C9636BB48F0D5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C451167513975C939244F684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D7CC95270BFE293A22A59611 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
+		E889C807DA40907EAA9821AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6D38D2FEF03F807BFC058CF /* ArcadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeUITests.swift; sourceTree = "<group>"; };
+		F918A3596978B44CC47BA08B /* ArcadeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ArcadeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18F2626CA031D34DD621D44F /* Arcade */ = {
+			isa = PBXGroup;
+			children = (
+				C8A79CA2F6D589859709234F /* App */,
+				7B5058489FB5CA4BF35DC866 /* Core */,
+				9AB0C2F803FC06D4D8DA55B0 /* Views */,
+				D208AB3110B05CCE82C8A583 /* Web */,
+			);
+			path = Arcade;
+			sourceTree = "<group>";
+		};
+		30589DC5F5181F468D5F4B4C = {
+			isa = PBXGroup;
+			children = (
+				85EA2ACA5A9275A8CBE2B482 /* LocalGames */,
+				18F2626CA031D34DD621D44F /* Arcade */,
+				B84DAA2740305E4CF8FBCCE3 /* ArcadeTests */,
+				7C220838F25EBE4568993D11 /* ArcadeUITests */,
+				3A4B4CB998C4566501AEB4D8 /* Resources */,
+				574C126053C1BE2AD42718A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3A4B4CB998C4566501AEB4D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E889C807DA40907EAA9821AF /* Assets.xcassets */,
+				C11BC23A5D5C9636BB48F0D5 /* PrivacyInfo.xcprivacy */,
+			);
+			name = Resources;
+			path = Arcade/Resources;
+			sourceTree = "<group>";
+		};
+		574C126053C1BE2AD42718A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F918A3596978B44CC47BA08B /* ArcadeTests.xctest */,
+				5FFCC4EFA9C26D16421F65F7 /* ArcadeUITests.xctest */,
+				1E22B871BD6ECD19C7C2CB3A /* HTMLArcade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B5058489FB5CA4BF35DC866 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C0E3DC89FE42481587736C3F /* Game.swift */,
+				40E233FC4433C361CF072001 /* GameLibrary.swift */,
+				AAF8E98B65578C4275DC6683 /* GameRepository.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7C220838F25EBE4568993D11 /* ArcadeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6D38D2FEF03F807BFC058CF /* ArcadeUITests.swift */,
+			);
+			path = ArcadeUITests;
+			sourceTree = "<group>";
+		};
+		9AB0C2F803FC06D4D8DA55B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C0FB604D55CB49FF5B940EB /* ArcadeTheme.swift */,
+				0B85A5D5A9B9F42F6F8A4B56 /* ContentView.swift */,
+				D7CC95270BFE293A22A59611 /* FindView.swift */,
+				9CEC0EEE493C9C6CD97C8589 /* LibraryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B84DAA2740305E4CF8FBCCE3 /* ArcadeTests */ = {
+			isa = PBXGroup;
+			children = (
+				5C47DFE4320054AD22D10069 /* GameRepositoryTests.swift */,
+				A8E60E0BBE0F8E27D4037A0F /* WebKitStorageTests.swift */,
+			);
+			path = ArcadeTests;
+			sourceTree = "<group>";
+		};
+		C8A79CA2F6D589859709234F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6B77C53EB0279BCDC6126561 /* HTMLArcadeApp.swift */,
+				C451167513975C939244F684 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D208AB3110B05CCE82C8A583 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8C01BDDE759AB61F7AC187E9 /* BrowserModel.swift */,
+				A1878B00A523D309E9BD7361 /* GamePlayerView.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08CFBAEDB62147E1DD976EEA /* HTMLArcade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E80A88B65E3F835D91CBF9D /* Build configuration list for PBXNativeTarget "HTMLArcade" */;
+			buildPhases = (
+				0A5B27707C2965C86FD5DC75 /* Sources */,
+				ED5C294FAB9E12A31F3869DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTMLArcade;
+			packageProductDependencies = (
+			);
+			productName = HTMLArcade;
+			productReference = 1E22B871BD6ECD19C7C2CB3A /* HTMLArcade.app */;
+			productType = "com.apple.product-type.application";
+		};
+		339907761C3DA170D7C2149B /* ArcadeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 613B32E3B284D105806A3C4A /* Build configuration list for PBXNativeTarget "ArcadeUITests" */;
+			buildPhases = (
+				90567DA25D4635AF48BE8DA8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2C810F2AB0585A1FC5A009A /* PBXTargetDependency */,
+			);
+			name = ArcadeUITests;
+			packageProductDependencies = (
+			);
+			productName = ArcadeUITests;
+			productReference = 5FFCC4EFA9C26D16421F65F7 /* ArcadeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C4F647C6A9DC8A40C0B37202 /* ArcadeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 099AA0E5910315F2105A8F57 /* Build configuration list for PBXNativeTarget "ArcadeTests" */;
+			buildPhases = (
+				6A9319E48D0F8A06A1AAE4FE /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B4A22893305A30A70C63C01 /* PBXTargetDependency */,
+			);
+			name = ArcadeTests;
+			packageProductDependencies = (
+			);
+			productName = ArcadeTests;
+			productReference = F918A3596978B44CC47BA08B /* ArcadeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8738BBF418D12FBEE5147F01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					08CFBAEDB62147E1DD976EEA = {
+						DevelopmentTeam = WV593VF4XZ;
+						ProvisioningStyle = Automatic;
+					};
+					339907761C3DA170D7C2149B = {
+						DevelopmentTeam = WV593VF4XZ;
+						TestTargetID = 08CFBAEDB62147E1DD976EEA;
+					};
+					C4F647C6A9DC8A40C0B37202 = {
+						DevelopmentTeam = WV593VF4XZ;
+					};
+				};
+			};
+			buildConfigurationList = FD3FBFE75D1A281405C93ED8 /* Build configuration list for PBXProject "HTMLArcade" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 30589DC5F5181F468D5F4B4C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 574C126053C1BE2AD42718A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08CFBAEDB62147E1DD976EEA /* HTMLArcade */,
+				C4F647C6A9DC8A40C0B37202 /* ArcadeTests */,
+				339907761C3DA170D7C2149B /* ArcadeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED5C294FAB9E12A31F3869DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				330060502D73AE1AF1D389D9 /* Assets.xcassets in Resources */,
+				820C3115ADA08D1587A4757D /* LocalGames in Resources */,
+				98B25C5D4FA0D463C0A5BE20 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A5B27707C2965C86FD5DC75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEC43E59135747B8F687E4B /* ArcadeTheme.swift in Sources */,
+				5F558F6249F0D54BF64ED277 /* BrowserModel.swift in Sources */,
+				9DB1149901201E465F195373 /* ContentView.swift in Sources */,
+				3906094C58299C688B8C1BB7 /* FindView.swift in Sources */,
+				80FD5C008BEDCCC94ED3F824 /* Game.swift in Sources */,
+				A1B9CC2583AB573AB0FCECA2 /* GameLibrary.swift in Sources */,
+				689844C2184F45A86F14C5E7 /* GamePlayerView.swift in Sources */,
+				8D9FB014C7CED2BEBB07DDB1 /* GameRepository.swift in Sources */,
+				55AB6B255488F59A5716701E /* HTMLArcadeApp.swift in Sources */,
+				A39A1EF93FF0188C3E7CB6E4 /* LibraryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A9319E48D0F8A06A1AAE4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				122ABB8B11C143DDD497E6D1 /* GameRepositoryTests.swift in Sources */,
+				4F516FDA7A61BC652E5AB7C2 /* WebKitStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90567DA25D4635AF48BE8DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD89848E0AC17C23C06B1425 /* ArcadeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B4A22893305A30A70C63C01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CFBAEDB62147E1DD976EEA /* HTMLArcade */;
+			targetProxy = A6F0276D407EAAB016BAF864 /* PBXContainerItemProxy */;
+		};
+		A2C810F2AB0585A1FC5A009A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CFBAEDB62147E1DD976EEA /* HTMLArcade */;
+			targetProxy = 17E5002EA8C94642B4E511E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA040AF309A99EB4CC7780A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.htmlarcade.ArcadeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTMLArcade.app/HTMLArcade";
+			};
+			name = Release;
+		};
+		19BB825FABABC193EF92BC2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = WV593VF4XZ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4372E6DC6C00D2A8E71199FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.htmlarcade.ArcadeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HTMLArcade;
+			};
+			name = Release;
+		};
+		444C9AFDA6380FF338CD66E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Arcade/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warren.htmlarcade;
+				PRODUCT_NAME = HTMLArcade;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76C126DD37D2DA6D4D665E6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.htmlarcade.ArcadeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTMLArcade.app/HTMLArcade";
+			};
+			name = Debug;
+		};
+		88D78FC051F2BA0DBB760BCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.htmlarcade.ArcadeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HTMLArcade;
+			};
+			name = Debug;
+		};
+		BD45FD08AACC98F442451269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = Arcade/App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.warren.htmlarcade;
+				PRODUCT_NAME = HTMLArcade;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBBA30CAE14EC10ABCB55116 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = WV593VF4XZ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		099AA0E5910315F2105A8F57 /* Build configuration list for PBXNativeTarget "ArcadeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76C126DD37D2DA6D4D665E6A /* Debug */,
+				0AA040AF309A99EB4CC7780A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3E80A88B65E3F835D91CBF9D /* Build configuration list for PBXNativeTarget "HTMLArcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD45FD08AACC98F442451269 /* Debug */,
+				444C9AFDA6380FF338CD66E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		613B32E3B284D105806A3C4A /* Build configuration list for PBXNativeTarget "ArcadeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D78FC051F2BA0DBB760BCA /* Debug */,
+				4372E6DC6C00D2A8E71199FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FD3FBFE75D1A281405C93ED8 /* Build configuration list for PBXProject "HTMLArcade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19BB825FABABC193EF92BC2F /* Debug */,
+				DBBA30CAE14EC10ABCB55116 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8738BBF418D12FBEE5147F01 /* Project object */;
+}
