@@ -12,6 +12,7 @@ final class AppStoreScreenshotTests: XCTestCase {
 
         app.tabBars.buttons["Find"].tap()
         XCTAssertTrue(app.buttons["browseDeviceFiles"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.links["githubGameList"].exists || app.buttons["githubGameList"].exists)
         capture("AppStore-02-Find")
 
         app.tabBars.buttons["Library"].tap()

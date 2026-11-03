@@ -16,6 +16,8 @@ The app copies imported files into its library, so it does not need the original
 
 **Find** also lets you search the web or paste a game URL and import an HTML download. Importing a webpage does not automatically make its remote assets, account system, or server work offline. ZIPs and folders with separate assets are not supported yet.
 
+Use **Find → Game list on GitHub** to open the game recommendations and offline notes below, or suggest another game by pull request.
+
 ## Pokémon HTML game list
 
 ### Tested in HTML Arcade

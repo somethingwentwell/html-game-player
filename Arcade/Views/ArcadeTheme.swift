@@ -29,9 +29,12 @@ struct PrimaryButton: View {
 struct BrandHeader: View {
     var body: some View {
         HStack(spacing: 9) {
-            Image(systemName: "gamecontroller.fill")
-                .font(.system(size: 18, weight: .bold))
-                .foregroundStyle(ArcadeTheme.lime)
+            Image("BrandLogo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .clipShape(RoundedRectangle(cornerRadius: 7))
+                .accessibilityHidden(true)
             Text("HTML ARCADE")
                 .font(.system(size: 12, weight: .heavy, design: .rounded))
                 .tracking(2)

@@ -1,0 +1,15 @@
+{
+  "name": "HTML Arcade",
+  "subtitle": "Offline HTML game player",
+  "promotionalText": "Import your HTML games, keep them in a simple library, and play full screen. Prepare a self-contained game before your flight and try it with Wi-Fi off.",
+  "description": "Bring your HTML games along for the flight.\n\nHTML Arcade is a simple iPhone and iPad player for self-contained HTML games. Import a file, keep it in your library, and give the game the whole screen.\n\nIMPORT FROM FILES\nChoose one or several .html or .htm games from Files, Downloads, On My iPhone, iCloud Drive, or connected file providers. The player copies imported games into its own library.\n\nFIND AND IMPORT\nSearch device storage through the native Files picker. Use the Find browser to search the web, paste a game link, or download an HTML file. Open Game list on GitHub for community recommendations, offline preparation notes, and a place to suggest games by pull request.\n\nPLAY FULL SCREEN\nPlay in portrait or landscape. A small movable menu lets you return to the library, restart, or choose an orientation without permanent browser controls covering the game.\n\nKEEP GAMES SEPARATE\nEach imported game has its own persistent browser storage. Games that implement local saving can keep their own progress when reopened. Hold a game in the library to rename or remove it.\n\nTRY ORBIT\nAn original offline game is included so you can try the player right away. Other games are imported by you.\n\nPREPARE BEFORE BOARDING\nFor offline play, use a self-contained HTML file with its assets included. Before leaving, turn on airplane mode, turn Wi-Fi off, and reopen the game to check startup and saving. Imported web pages, online accounts, multiplayer, and remote assets may still need internet. ZIP archives and folders with separate assets are not currently supported.\n\nHTML Arcade has no player account, subscriptions, or in-app purchases. Third-party websites and games may have their own requirements and privacy practices.\n\nI built this for myself to play HTML games on flights, and shared the source so others can do the same. Good game recommendations and pull requests are welcome on GitHub.",
+  "keywords": "html,game,player,offline,files,import,flight,javascript,web,arcade",
+  "supportUrl": "https://github.com/somethingwentwell/html-game-player/blob/main/SUPPORT.md",
+  "marketingUrl": "https://github.com/somethingwentwell/html-game-player",
+  "privacyPolicyUrl": "https://github.com/somethingwentwell/html-game-player/blob/main/PRIVACY.md",
+  "copyright": "2026 somethingwentwell",
+  "primaryCategory": "UTILITIES",
+  "secondaryCategory": "ENTERTAINMENT",
+  "price": "Free",
+  "releaseType": "MANUAL"
+}

@@ -62,6 +62,30 @@ struct FindView: View {
                 .disabled(library.isBusy)
                 .accessibilityIdentifier("browseDeviceFiles")
 
+                Link(destination: URL(string: "https://github.com/somethingwentwell/html-game-player#pok%C3%A9mon-html-game-list")!) {
+                    HStack(spacing: 14) {
+                        Image(systemName: "list.bullet.rectangle")
+                            .font(.system(size: 23))
+                            .foregroundStyle(ArcadeTheme.lime)
+                        VStack(alignment: .leading, spacing: 6) {
+                            Text("Game list on GitHub")
+                                .font(.system(size: 17, weight: .semibold, design: .rounded))
+                            Text("Game picks, offline notes, and a place to suggest your favorites.")
+                                .font(.system(size: 12))
+                                .foregroundStyle(ArcadeTheme.muted)
+                                .multilineTextAlignment(.leading)
+                        }
+                        Spacer(minLength: 0)
+                        Image(systemName: "arrow.up.right")
+                            .font(.system(size: 14, weight: .medium))
+                            .foregroundStyle(ArcadeTheme.muted)
+                    }
+                    .padding(20)
+                    .background(ArcadeTheme.surface, in: RoundedRectangle(cornerRadius: 22))
+                }
+                .buttonStyle(.plain)
+                .accessibilityIdentifier("githubGameList")
+
                 VStack(alignment: .leading, spacing: 16) {
                     Text("EXPLORE THE WEB")
                         .font(.system(size: 10, weight: .bold, design: .monospaced))
