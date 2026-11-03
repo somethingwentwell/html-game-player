@@ -10,6 +10,7 @@
 		122ABB8B11C143DDD497E6D1 /* GameRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C47DFE4320054AD22D10069 /* GameRepositoryTests.swift */; };
 		330060502D73AE1AF1D389D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E889C807DA40907EAA9821AF /* Assets.xcassets */; };
 		3906094C58299C688B8C1BB7 /* FindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CC95270BFE293A22A59611 /* FindView.swift */; };
+		390C759C0E9F41452A18688E /* AppStoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15190D44E714EC2C2DE3475 /* AppStoreScreenshotTests.swift */; };
 		4F516FDA7A61BC652E5AB7C2 /* WebKitStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E60E0BBE0F8E27D4037A0F /* WebKitStorageTests.swift */; };
 		55AB6B255488F59A5716701E /* HTMLArcadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B77C53EB0279BCDC6126561 /* HTMLArcadeApp.swift */; };
 		5F558F6249F0D54BF64ED277 /* BrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C01BDDE759AB61F7AC187E9 /* BrowserModel.swift */; };
@@ -59,6 +60,7 @@
 		C0E3DC89FE42481587736C3F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C11BC23A5D5C9636BB48F0D5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		C451167513975C939244F684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D15190D44E714EC2C2DE3475 /* AppStoreScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreScreenshotTests.swift; sourceTree = "<group>"; };
 		D7CC95270BFE293A22A59611 /* FindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindView.swift; sourceTree = "<group>"; };
 		E889C807DA40907EAA9821AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6D38D2FEF03F807BFC058CF /* ArcadeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeUITests.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		7C220838F25EBE4568993D11 /* ArcadeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				D15190D44E714EC2C2DE3475 /* AppStoreScreenshotTests.swift */,
 				F6D38D2FEF03F807BFC058CF /* ArcadeUITests.swift */,
 			);
 			path = ArcadeUITests;
@@ -309,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390C759C0E9F41452A18688E /* AppStoreScreenshotTests.swift in Sources */,
 				FD89848E0AC17C23C06B1425 /* ArcadeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

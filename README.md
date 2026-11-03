@@ -81,6 +81,8 @@ Maintainer release instructions are in [TESTFLIGHT.md](TESTFLIGHT.md). Forks sho
 
 There is no analytics or account system in HTML Arcade. Imported games and saves live in app storage. Web searches use DuckDuckGo; websites and imported game code can contact their own services. Offline behavior depends on the game you import.
 
+Read the [privacy policy](PRIVACY.md) or visit [support](SUPPORT.md).
+
 ## License
 
 HTML Arcade's original code and the bundled Orbit sample are available under the [MIT License](LICENSE). Linked games retain their own licenses.

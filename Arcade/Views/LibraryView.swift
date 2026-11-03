@@ -67,6 +67,17 @@ struct LibraryView: View {
                 .foregroundStyle(ArcadeTheme.muted)
                 .lineSpacing(4)
                 .padding(.vertical, 10)
+
+                HStack(spacing: 24) {
+                    Link("Privacy", destination: URL(string: "https://github.com/somethingwentwell/html-game-player/blob/main/PRIVACY.md")!)
+                        .accessibilityIdentifier("privacyPolicy")
+                    Link("Support", destination: URL(string: "https://github.com/somethingwentwell/html-game-player/blob/main/SUPPORT.md")!)
+                        .accessibilityIdentifier("appSupport")
+                    Spacer()
+                }
+                .font(.system(size: 12, weight: .medium))
+                .foregroundStyle(ArcadeTheme.muted)
+                .frame(minHeight: 44)
             }
             .padding(.horizontal, 24)
             .padding(.bottom, 24)
