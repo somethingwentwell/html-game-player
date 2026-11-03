@@ -10,12 +10,12 @@ final class AppStoreScreenshotTests: XCTestCase {
         XCTAssertTrue(app.buttons["featuredGame"].waitForExistence(timeout: 30))
         capture("AppStore-01-Library")
 
-        app.tabBars.buttons["Find"].tap()
+        app.buttons["Find"].firstMatch.tap()
         XCTAssertTrue(app.buttons["browseDeviceFiles"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.links["githubGameList"].exists || app.buttons["githubGameList"].exists)
         capture("AppStore-02-Find")
 
-        app.tabBars.buttons["Library"].tap()
+        app.buttons["Library"].firstMatch.tap()
         app.buttons["featuredGame"].tap()
         XCTAssertTrue(app.buttons["gameMenu"].waitForExistence(timeout: 15))
         XCTAssertTrue(app.webViews.staticTexts["Stay in orbit."].waitForExistence(timeout: 15))
