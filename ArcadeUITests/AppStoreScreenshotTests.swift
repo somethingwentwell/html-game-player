@@ -19,6 +19,8 @@ final class AppStoreScreenshotTests: XCTestCase {
         app.buttons["featuredGame"].tap()
         XCTAssertTrue(app.buttons["gameMenu"].waitForExistence(timeout: 15))
         XCTAssertTrue(app.webViews.staticTexts["Stay in orbit."].waitForExistence(timeout: 15))
+        // WebKit can expose its accessibility tree before its first composited frame.
+        Thread.sleep(forTimeInterval: 2)
         capture("AppStore-03-Play")
     }
 
